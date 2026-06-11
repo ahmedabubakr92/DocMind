@@ -136,3 +136,37 @@
     cursor: pointer;
   }
 }
+
+/* Clerk UserButton popup overrides */
+.cl-userButtonPopoverFooter {
+  display: none !important;
+}
+
+.cl-userButtonPopoverCard {
+  background-color: var(--card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 4px 24px rgba(73, 64, 228, 0.08) !important;
+  color: var(--foreground) !important;
+}
+
+.cl-userPreviewMainIdentifier {
+  color: var(--foreground) !important;
+  font-weight: 500 !important;
+}
+
+.cl-userPreviewSecondaryIdentifier {
+  color: var(--muted-foreground) !important;
+}
+
+.cl-userButtonPopoverActionButton:hover {
+  background-color: var(--muted) !important;
+}
+
+.cl-userButtonPopoverActionButtonText {
+  color: var(--foreground) !important;
+}
+
+.cl-avatarBox {
+  box-shadow: 0 0 0 2px color-mix(in oklch, var(--primary) 30%, transparent) !important;
+}

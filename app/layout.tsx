@@ -44,7 +44,7 @@ export default function RootLayout({
         <ClerkProvider
           appearance={{
             variables: {
-              colorPrimary: "#4940E4",
+              colorPrimary: "--var(--primary)",
               colorBackground: "var(--background)",
               colorText: "var(--foreground)",
               colorTextSecondary: "var(--muted-foreground)",
@@ -58,11 +58,13 @@ export default function RootLayout({
             },
             elements: {
               // Avatar trigger
-              avatarBox: "ring-2 ring-primary/30 hover:ring-primary/60 transition-all duration-150",
+              avatarBox:
+                "ring-2 ring-primary/30 hover:ring-primary/60 transition-all duration-150",
               userButtonTrigger: "focus:shadow-none focus:outline-none",
 
               // Popup card
-              userButtonPopoverCard: "border border-border bg-card rounded-[14px] shadow-[0_4px_24px_rgba(73,64,228,0.08)] p-1",
+              userButtonPopoverCard:
+                "border border-border bg-card rounded-[14px] shadow-[0_4px_24px_rgba(73,64,228,0.08)] p-1",
               userButtonPopoverActions: "p-1 gap-0.5",
 
               // User preview header
@@ -71,7 +73,8 @@ export default function RootLayout({
               userPreviewSecondaryIdentifier: "text-muted-foreground text-xs",
 
               // Action buttons
-              userButtonPopoverActionButton: "hover:bg-muted text-foreground rounded-[10px] px-3 py-2 transition-colors",
+              userButtonPopoverActionButton:
+                "hover:bg-muted text-foreground rounded-[10px] px-3 py-2 transition-colors",
               userButtonPopoverActionButtonText: "text-foreground text-sm",
               userButtonPopoverActionButtonIcon: "text-muted-foreground",
 
